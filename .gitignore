@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
+venv/
+env/
+.streamlit/
+list_models.py
+test.txt
+frontend/__pycache__/
+backend/__pycache__/
+.gemini/
+*.exe
+*.msi

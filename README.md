@@ -1,18 +1,18 @@
 # NLP Duygu Analizi Projesi (Gemini AI)
 
-Bu proje, Google Gemini 1.5 Flash modelini kullanarak metinlerin duygu analizini (Pozitif, Negatif, Nötr) gerçekleştiren bir full-stack web uygulamasıdır.
+Bu proje, Google Gemini 2.0 Flash Lite modelini kullanarak metinlerin duygu analizini (Pozitif, Negatif, Nötr) gerçekleştiren modern bir web uygulamasıdır.
 
 ## 🚀 Özellikler
-- **Flask Backend:** Gemini API ile entegre RESTful API.
+- **Doğrudan Gemini Entegrasyonu:** Herhangi bir harici backend sunucusuna ihtiyaç duymadan doğrudan Streamlit üzerinden çalışır.
+- **Akıllı Fallback Sistemi:** API kotası dolsa veya internet kesilse bile yerel anahtar kelime analizi ile kesintisiz hizmet verir.
 - **Streamlit Frontend:** Modern ve etkileşimli kullanıcı arayüzü.
 - **Duygu Dağılımı:** Plotly ile görselleştirilmiş analiz geçmişi.
-- **Detaylı Açıklama:** Yapay zeka tarafından sağlanan duygu gerekçesi.
 
 ## 🛠️ Kurulum
 
 1. Depoyu klonlayın:
    ```bash
-   git clone https://github.com/kullaniciadi/nlp-sentiment-project.git
+   git clone https://github.com/allyyy06/nlp-sentiment-project.git
    cd nlp-sentiment-project
    ```
 
@@ -24,21 +24,13 @@ Bu proje, Google Gemini 1.5 Flash modelini kullanarak metinlerin duygu analizini
 3. Bağımlılıkları yükleyin:
    ```bash
    pip install -r requirements.txt
-   pip install -r backend/requirements.txt
    ```
 
 ## 🏃 Uygulamayı Çalıştırma
 
-1. **Backend'i Başlatın:**
-   ```bash
-   cd backend
-   python app.py
-   ```
+Uygulamayı başlatmak için terminale şu komutu yazın:
+```bash
+streamlit run streamlit_app.py
+```
 
-2. **Frontend'i Başlatın:**
-   (Yeni bir terminalde)
-   ```bash
-   streamlit run streamlit_app.py
-   ```
-
-Uygulama varsayılan olarak `http://localhost:8501` adresinde çalışacaktır.
+Uygulamanız şu anki yapılandırmada varsayılan olarak **http://localhost:8505** adresinde yayına girecektir.
